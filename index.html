@@ -7,31 +7,21 @@
 </head>
 
 <body>
-    <div id="notesapp" ng-app="notesApp" ng-controller="NoteController" ng-click="addNote($event)">
+    <div id="notesapp" ng-app="notesApp" ng-controller="NotesController" ng-click="addNote($event)">
         <div class="menu">
             <div class="close"></div>
         </div>
         <div class="notes" ng-repeat="note in notes" ng-show="notes.length">
-
-        <note></note>
-
-            <!-- <div class="note" ng-style="note.offset">
-                <div class="head">
-                    <div class="panel">
-                        <div class="close"></div>
-                    </div>
-                    <textarea class="title">{{note.title}}</textarea>
-                </div>
-                <div class="body">
-                    <textarea class="content">{{note.content}}</textarea>
-                </div>
-            </div> -->
+            <note></note>
         </div>
     </div>
 
     <script src="js/lib/angular/angular.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/controllers/noteController.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/providers.js"></script>
+
 
 </body>
 
